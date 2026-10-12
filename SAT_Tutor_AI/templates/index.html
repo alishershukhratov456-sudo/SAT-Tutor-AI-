@@ -1,0 +1,59 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SAT Tutor AI</title>
+  <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+  <header class="topbar">
+    <a class="logo" href="/">SAT<span>Tutor</span> AI</a>
+    <span class="tag">YOUR PERSONAL SAT TUTOR, Created by ALI</span>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <p class="eyebrow">STUDY SMARTER</p>
+      <h1>Your SAT journey,<br><span>powered by AI.</span></h1>
+      <p class="subtitle">
+        Ask questions, understand every step, and practice with your personal SAT tutor.
+      </p>
+    </section>
+
+    <section class="workspace">
+      <div class="section-tabs">
+        <button class="tab active" data-section="Math">∑ SAT Math</button>
+        <button class="tab" data-section="Reading & Writing">Aa Reading & Writing</button>
+      </div>
+
+      <label for="question">YOUR QUESTION</label>
+      <textarea id="question" placeholder="Paste an SAT question here, or try an example below..."></textarea>
+
+      <div class="examples">
+        <button class="example" data-question="If 3x + 7 = 22, what is the value of x?">Try a Math question ↗</button>
+        <button class="example" data-question="Choose the correct word: Each of the students ___ a book. (A) have (B) has">Try a grammar question ↗</button>
+      </div>
+
+      <button id="askButton" class="ask-button">Explain my answer <span>→</span></button>
+      <p class="hint">Step-by-step explanations · Practice at your own pace</p>
+
+      <section id="result" class="result" aria-live="polite" hidden>
+        <h2>Your explanation</h2>
+        <div id="answer"></div>
+      </section>
+    </section>
+
+    <footer>Built for curious minds. Keep learning, one question at a time.</footer>
+  </main>
+
+  <script src="/static/script.js"></script>
+</body>
+</html>
+
+
+
+<footer class="site-footer">
+  <span>Created by Ali</span>
+</footer>
